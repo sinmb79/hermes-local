@@ -1,0 +1,36 @@
+# Local runtime
+/logs/
+**/__pycache__/
+*.py[cod]
+*.pid
+
+# Private configuration and secrets
+.env
+.env.*
+!.env.example
+config.yaml
+config.before-local-*.yaml
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Model weights and large local artifacts
+*.gguf
+*.safetensors
+*.onnx
+*.pt
+*.pth
+
+# IDE, operating system, and internal handoff state
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+/.codex/
+/sessions/
+/memories/
+*.bak
+*.tmp
+*~

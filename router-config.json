@@ -1,0 +1,37 @@
+{
+  "listen_host": "127.0.0.1",
+  "listen_port": 11435,
+  "ollama_base_url": "http://127.0.0.1:11434",
+  "mode": "auto",
+  "models": {
+    "quality": "hermes-quality",
+    "coding": "hermes-coder",
+    "fast": "hermes-fast",
+    "korean": "hermes-korean-agent",
+    "korean_writing": "hermes-korean-writing",
+    "korean_fast": "hermes-korean-fast"
+  },
+  "capabilities": {
+    "quality": ["text", "vision", "tools"],
+    "coding": ["text", "tools"],
+    "fast": ["text", "tools"],
+    "korean": ["text"],
+    "korean_writing": ["text"],
+    "korean_fast": ["text"]
+  },
+  "routing": {
+    "korean_min_ratio": 0.22,
+    "korean_max_chars": 24000,
+    "simple_max_chars": 600
+  },
+  "fallback_max_attempts": 3,
+  "upstream_timeout_seconds": 600,
+  "request_timeout_seconds": 900,
+  "fallback_order": [
+    "fast",
+    "coding",
+    "korean_writing",
+    "korean_fast",
+    "quality"
+  ]
+}

@@ -1,0 +1,21 @@
+[project]
+name = "hermes-local-router"
+version = "0.1.0"
+description = "Loopback-only role router for Hermes Agent and local Ollama models"
+readme = "README.en.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+  { name = "sinmb79" }
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: Microsoft :: Windows",
+  "Programming Language :: Python :: 3.11",
+]
+
+[project.urls]
+Homepage = "https://github.com/sinmb79/hermes-local"
+Repository = "https://github.com/sinmb79/hermes-local"
+Issues = "https://github.com/sinmb79/hermes-local/issues"

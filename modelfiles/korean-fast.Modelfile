@@ -1,0 +1,4 @@
+FROM hf.co/mykor/A.X-4.0-Light-gguf:Q6_K
+PARAMETER num_ctx 65536
+PARAMETER temperature 0.3
+PARAMETER top_p 0.9
